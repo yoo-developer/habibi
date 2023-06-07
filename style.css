@@ -1,0 +1,328 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #E16E33;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url("src/home.gif");
+    position: relative;
+    background-size: cover;
+
+
+}
+.home .container{
+    width: 50%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+
+}
+b{
+    color: brown;
+}
+.home .container h1 {
+    font-size: 4.5vmin;
+
+}
+.home .container p{
+    font-size: 2vmin;
+    line-height: 20px;
+
+}
+.home .logo{
+    position: absolute;
+    right: 7%;
+    top: calc(50vh - 11vw);
+    border-radius: 100%;
+    width: 22vw;
+    animation  : spin 5s infinite ease-in-out ;
+}
+
+@keyframes spin { 0% {transform:rotate(0deg)} 100% { transform:rotate(360deg ) }}
+
+
+
+.about{
+
+    background-color: #E16E33;
+
+    
+}
+section{
+    position: relative;
+}
+.title{
+    font-size: 6vmin;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    color: brown;
+}
+.about .container {
+    padding:60px;
+    padding-block:7vmin;
+}
+.about p{
+    padding-block: 0;
+    padding: 40px;
+    line-height: 2.4ch;
+    background-color: rgba(255, 228, 196, 0.089);
+    border-radius: 30px;
+    border: dashed 2px white;
+}
+
+.roadmap{
+    height: 100vh;
+    width: 100%;
+}
+.roadmap {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    zoom: 0.85; min-height: 100vh;
+}
+
+.roadmap_card {
+    width: calc(90%/3 - 5%);
+    height: 500px;
+    border:dashed 2px white;
+    display: block;
+    background-color: rgba(221, 118, 22, 0.137);
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    background-size: 100% auto;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(201, 78, 62, 0.295);
+}
+.roadmap_card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url('src/yallahabibipng.png');
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+.roadmap_card h2 {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: oblique;
+    color: brown;
+}
+
+.roadmap_card div {
+    margin-top: 20%;
+    color: white;
+    padding: 20px;
+    padding-inline: 10px; }
+
+.roadmap_card i {
+    padding-block: 10px; text-align: left;
+    width: 100%;
+    font-style: normal;
+    line-height: 2ch;
+    font-size: 10px;
+    float: left;
+    color: rgb(255, 166, 0);
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+.roadmap_card i::before {
+    content: '●';
+    font-style: normal;
+    font-size: 1rem;
+    margin-inline: 5px; text-shadow: 0 0 20px white;
+}
+.roadmap b{
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke:0.3px rgba(255, 115, 0, 0.507);
+}
+ 
+.tokenomics .container {
+    max-width:80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff02;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: dashed 2px white;
+  }
+  
+  h1 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    color: brown;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .highlight {
+    color: brown;
+    font-weight: bold;
+  }
+  
+  .tokenomics-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tokenomics-table th,
+  .tokenomics-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tokenomics-table th {
+    background-color: brown;
+    color: rgb(255, 255, 255);
+  }
+  
+  .tokenomics-table td {
+    color: #000000;
+  }
+  
+  .tokenomics-table td:first-child {
+    font-weight: bold;
+  }
+  
+  .note {
+    color: rgb(58, 23, 0);
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  #bottom{
+    height:100vh;
+  }
+
+  .links {
+    height: 10vmin;
+    gap: calc((100% - 400px)/4 );
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: row;
+}
+
+.links div {
+    width: 160px;
+    height: 40px;
+    border-radius: 20px ;
+    background-color: #D63904;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 90%;
+    -webkit-text-stroke-width: 0;
+}
+a{
+    font-style: normal;
+    color: #D63904;
+}
+  @media screen and (max-width:1200px) {
+    .home .logo{
+        position: absolute;
+        right: calc(39vw);
+        top: initial; 
+        border-radius: 100%;
+        width: 22vw;
+        bottom: 20%;
+        animation: spin 5s infinite ease-in-out;
+    }
+    .home .container{
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 30%;
+    }
+    .home .container p{
+        padding-inline: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 27px;
+        line-height: inherit;
+    }
+    .about p {
+        font-size: 10px;
+    }
+    .section h2{
+        font-size: 13px;
+    }
+    .section p{
+        font-size: 25px;
+    }
+    .note {
+        display: none;
+    }
+    .roadmap h2 {
+        display: none;
+    }
+
+    .roadmap_card {
+        width: 100%;
+        height: max-content;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+    .roadmap_card::after{
+        background: none;
+    }
+    .roadmap_card h2 {
+        display: inherit;
+    }
+    .roadmap_card i{
+        font-size: 30px;
+    }
+    .links{
+        height: 10vmin;
+        gap: calc((100% - 400px)/4 );
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .tokenomics .container{
+        max-width: 90%;
+    }
+  }
